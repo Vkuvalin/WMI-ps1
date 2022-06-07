@@ -1,7 +1,7 @@
-$Password = ConvertTo-SecureString "Passwd321" –AsPlainText –Force
+$Password = ConvertTo-SecureString "Passwd321" вЂ“AsPlainText вЂ“Force
 $user = "test_user"
 New-LocalUser -Name $user -Description "test user for probe" -Password $Password
-Add-LocalGroupMember -Group "Пользователи удаленного управления" -Member $user
+Add-LocalGroupMember -Group "РџРѕР»СЊР·РѕРІР°С‚РµР»Рё СѓРґР°Р»РµРЅРЅРѕРіРѕ СѓРїСЂР°РІР»РµРЅРёСЏ" -Member $user
 
 $Namespace = "root\cimv2"
 $systemSecurity = Get-CimInstance -Namespace $Namespace -ClassName __SystemSecurity   
